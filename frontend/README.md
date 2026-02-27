@@ -1,4 +1,5 @@
 ﻿
+[![Language: Haskell](https://img.shields.io/badge/Language-Haskell-5e5086?style=for-the-badge&logo=haskell)](https://www.haskell.org/)
 [![Language: PureScript](https://img.shields.io/badge/Language-PureScript-black?style=for-the-badge&logo=purescript)](https://www.purescript.org/)
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://payos-three.vercel.app/)
 ##  Technical Audit (For Engineering Managers)
