@@ -1,0 +1,1 @@
+export { PayAgent } from './index';

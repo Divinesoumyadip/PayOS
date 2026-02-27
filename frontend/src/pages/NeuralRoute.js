@@ -1,0 +1,1 @@
+export { NeuralRoute } from './index';

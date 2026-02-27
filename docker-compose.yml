@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "4000:4000"
+    environment:
+      - HYPERSWITCH_API_KEY=${HYPERSWITCH_API_KEY}
+      - CLAUDE_API_KEY=${CLAUDE_API_KEY}
+      - HYPERSWITCH_BASE_URL=https://sandbox.hyperswitch.io
+      - PORT=4000
+      - NODE_ENV=production
+      - FRONTEND_URL=http://localhost:3000
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
