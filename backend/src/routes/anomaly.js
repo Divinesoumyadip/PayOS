@@ -1,11 +1,14 @@
-const express = require('express');
-const router  = express.Router();
-const { runAllDetectors, generateMockTransactions } = require('../services/sentinelPay');
-const hs = require('../services/hyperswitch');
+const express = require("express");
+const router = express.Router();
+const {
+  runAllDetectors,
+  generateMockTransactions,
+} = require("../services/sentinelPay");
+const hs = require("../services/hyperswitch");
 
 // GET /api/anomaly/scan
 // Scans real Hyperswitch transactions + mock fill
-router.get('/scan', async (req, res, next) => {
+router.get("/scan", async (req, res, next) => {
   try {
     let transactions = [];
     try {
@@ -17,11 +20,16 @@ router.get('/scan', async (req, res, next) => {
     }
     // Supplement with mock data for richer anomaly detection
     if (transactions.length < 50) {
-      transactions = [...transactions, ...generateMockTransactions(200 - transactions.length)];
+      transactions = [
+        ...transactions,
+        ...generateMockTransactions(200 - transactions.length),
+      ];
     }
     const results = runAllDetectors(transactions);
     res.json(results);
-  } catch (err) { next(err); }
+  } catch (err) {
+    next(err);
+  }
 });
 
 module.exports = router;
