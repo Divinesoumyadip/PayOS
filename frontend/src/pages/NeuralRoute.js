@@ -1,1 +1,1 @@
-export { NeuralRoute } from './index';
+export { NeuralRoute } from "./index";

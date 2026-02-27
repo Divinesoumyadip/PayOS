@@ -1,1 +1,1 @@
-export { PayAgent } from './index';
+export { PayAgent } from "./index";

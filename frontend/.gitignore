@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+dist/
+build/
+
+# Environment Variables
+.env
+.env.local
+
+# C++ Build artifacts
+*.o
+*.out
+*.exe
+
+# System Files
+.DS_Store
+Thumbs.db
