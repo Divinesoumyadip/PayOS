@@ -1,4 +1,5 @@
 # PayOS — Payment Intelligence Suite
+<img width="1279" height="816" alt="image" src="https://github.com/user-attachments/assets/f32564f4-2a3c-4e8e-9363-23a018fd63cf" />
 
 > AI-powered payment operations platform built by us
 
@@ -49,6 +50,8 @@ Hyperswitch Sandbox API (sandbox.hyperswitch.io)
 2. Create account → API Keys → Create Key
 
 ### 2. Setup Backend
+<img width="1228" height="781" alt="image" src="https://github.com/user-attachments/assets/3c589daa-d85e-45f2-bedd-c62c1de3bfad" />
+
 
 ```bash
 cd backend
@@ -60,6 +63,8 @@ npm run dev
 ```
 
 ### 3. Setup Frontend
+<img width="1280" height="591" alt="image" src="https://github.com/user-attachments/assets/710ddbbd-b5e4-4522-994f-e3b5e5ada307" />
+
 
 ```bash
 cd frontend
